@@ -9,13 +9,9 @@ const actualizarDistancia = async (req = request, res = response) => {
 
     const dis = await Distancia.findByIdAndUpdate(_id, resto);
 
-
-
-
     res.json({
         ok: true,
         _id,
-        // distSensor,
         dis
     });
 

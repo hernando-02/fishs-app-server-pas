@@ -6,7 +6,7 @@ const borrarHoraios = async (req, res = response) => {
 
     const id = req.params.id;
 
-    // Horario.findById(hora).remove();
+    await Horario.findById(id).remove();
 
     res.json({
         ok: true,
