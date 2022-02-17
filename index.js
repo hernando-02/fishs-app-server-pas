@@ -33,12 +33,14 @@ app.use(express.static(publicPath));
 // * un midelware es una funcion que se ejecuta cuando el codigo pasa por donde se esta
 // * llamando
 // ! rutas 
+// ? en esta primera ruta puedo crera y acutualizar horas
 app.use('/api/creacion', require('./routes/auth'));         // ! crear un horario nuevo
-app.use('/api/horarios', require('./routes/horarios'));     // ! adquir los horarios que estan en la DB
+app.use('/api/horarios', require('./routes/horarios'));     // ! adquir todos los horarios que estan en la DB
+// app.use('/api/horarios', require('./routes/horarios'));     // ! adquir horarios por id que estan en la DB
+// app.use('/api/borrar', require('./routes/borrarHorario'));  // ! eliminar un horaio
 app.use('/api/distancia', require('./routes/distancia'));   // ! crear la distancia para actualizarla
 app.use('/api/actualizarDistancia', require('./routes/actualizarDistancia')) // !actualizar la distancia
 app.use('/api/obtenerDistancia', require('./routes/obtenerDistancia')) // ! obtener la distancia, me servira para el movil
-app.use('/api/borrar', require('./routes/borrarHorario'));  // * falta poder eliminar un horaio
 
 
 
