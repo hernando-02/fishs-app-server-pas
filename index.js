@@ -39,8 +39,10 @@ app.use('/api/horarios', require('./routes/horarios'));     // ! adquir todos lo
 // app.use('/api/horarios', require('./routes/horarios'));     // ! adquir horarios por id que estan en la DB
 // app.use('/api/borrar', require('./routes/borrarHorario'));  // ! eliminar un horaio
 app.use('/api/distancia', require('./routes/distancia'));   // ! crear la distancia para actualizarla
-app.use('/api/actualizarDistancia', require('./routes/actualizarDistancia')) // !actualizar la distancia
-app.use('/api/obtenerDistancia', require('./routes/obtenerDistancia')) // ! obtener la distancia, me servira para el movil
+app.use('/api/actualizarDistancia', require('./routes/actualizarDistancia')); // !actualizar la distancia
+app.use('/api/obtenerDistancia', require('./routes/obtenerDistancia')); // ! obtener la distancia, me servira para el movil
+app.use('/api/crearRegistro', require('./routes/crearRegistro'));
+app.use('/api/registros', require('./routes/registros'));
 
 
 

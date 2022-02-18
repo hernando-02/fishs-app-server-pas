@@ -10,8 +10,6 @@ const getHoraios = async (req, res = response) => {
         ok: true,
         horarios
     });
-
-
 };
 
 const getOnlyOneHoraio = async (req = request, res = response) => {

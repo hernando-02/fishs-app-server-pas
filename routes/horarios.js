@@ -5,7 +5,7 @@
 
 const { Router } = require('express');
 
-const { getHoraios, getOnlyOneHoraio } = require('../controllers/horarios')
+const { getHoraios, getOnlyOneHoraio, getRegistros } = require('../controllers/horarios')
 // const { check } = require('express-validator');
 // const { crearHorario } = require('../controllers/auth');
 // const { validarCampos } = require('../middlewares/validar-campos');
@@ -16,7 +16,7 @@ const router = Router();
 
 // * configuracion de la primera ruta
 router.get('/', getHoraios);
-router.get('/:_id', getOnlyOneHoraio)
+router.get('/:_id', getOnlyOneHoraio);
 
 
 module.exports = router;
